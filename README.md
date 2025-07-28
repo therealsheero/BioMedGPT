@@ -1,13 +1,13 @@
 
 ---
 
-# 🧬 BioMedGPT: AI-Driven Drug Discovery Platform
+#  BioMedGPT: AI-Driven Drug Discovery Platform
 
 BioMedGPT is an end-to-end AI system for **generating, optimizing, and evaluating drug-like molecules** using **generative models, graph neural networks (GNNs)**, and **reinforcement learning**. Inspired by DeepMind’s AlphaFold and modern biomedical AI pipelines, this project aims to automate the **design of molecules** targeting specific biological properties or proteins.
 
 ---
 
-## 🚧 TODO: Roadmap Checklist
+##  TODO: Roadmap Checklist
 
 - [ ] ✅ **Phase 1: Literature Review + Paper Replication**
   - [ ] Molecule Generation (VAE, RNN, Diffusion)
@@ -32,7 +32,7 @@ BioMedGPT is an end-to-end AI system for **generating, optimizing, and evaluatin
 
 ---
 
-## 📦 Folder Structure
+##  Folder Structure
 
 ```bash
 BioMedGPT/
@@ -49,18 +49,18 @@ BioMedGPT/
 
 ---
 
-## 🔧 Installation Instructions
+##  Installation Instructions
 
 > ⚠️ Use Python 3.8 or 3.9. Avoid 3.12 due to TorchDrug, MOSES, RDKit issues.
 
-### 🐍 Create Environment
+###  Create Environment
 
 ```bash
 conda create -n biomedgpt python=3.9
 conda activate biomedgpt
 ```
 
-### 📦 Install Dependencies
+###  Install Dependencies
 
 ```bash
 # Core libraries
@@ -83,7 +83,7 @@ pip install gradio streamlit umap-learn
 
 ---
 
-## 📚 Datasets
+##  Datasets
 
 | Dataset       | Purpose                      | Format             |
 | ------------- | ---------------------------- | ------------------ |
@@ -95,7 +95,7 @@ pip install gradio streamlit umap-learn
 
 ---
 
-## 🚀 Project Flow
+##  Project Flow
 
 1. **Train generator** on ZINC to sample novel molecules
 2. **Train GNN** to predict QED, solubility, and toxicity
@@ -107,7 +107,7 @@ pip install gradio streamlit umap-learn
 
 ---
 
-## 🧠 Key Tools & Libraries
+##  Key Tools & Libraries
 
 | Category          | Tools/Libraries                             |
 | ----------------- | ------------------------------------------- |
@@ -119,7 +119,7 @@ pip install gradio streamlit umap-learn
 
 ---
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 * **QED**: Drug-likeness
 * **SA Score**: Synthetic accessibility
@@ -130,7 +130,7 @@ pip install gradio streamlit umap-learn
 
 ---
 
-## 🤝 Credits & References
+##  Credits & References
 
 * Olivecrona et al., *"Molecular De Novo Design through Deep Reinforcement Learning"*, 2017
 * Gilmer et al., *"Neural Message Passing for Quantum Chemistry"*, 2017
