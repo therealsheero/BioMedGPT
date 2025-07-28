@@ -1,11 +1,14 @@
 
-#  BioMedGPT: AI-Driven Drug Discovery Platform
+---
+
+````markdown
+# 🧬 BioMedGPT: AI-Driven Drug Discovery Platform
 
 BioMedGPT is an end-to-end AI system for **generating, optimizing, and evaluating drug-like molecules** using **generative models, graph neural networks (GNNs)**, and **reinforcement learning**. Inspired by DeepMind’s AlphaFold and modern biomedical AI pipelines, this project aims to automate the **design of molecules** targeting specific biological properties or proteins.
 
 ---
 
-##  TODO: Roadmap Checklist
+## 🚧 TODO: Roadmap Checklist
 
 - [ ] ✅ **Phase 1: Literature Review + Paper Replication**
   - [ ] Molecule Generation (VAE, RNN, Diffusion)
@@ -132,4 +135,6 @@ pip install gradio streamlit umap-learn
 
 * Olivecrona et al., *"Molecular De Novo Design through Deep Reinforcement Learning"*, 2017
 * Gilmer et al., *"Neural Message Passing for Quantum Chemistry"*, 2017
+
 ---
+
