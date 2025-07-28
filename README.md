@@ -3,8 +3,11 @@
 
 #  BioMedGPT: AI-Driven Drug Discovery Platform
 
-BioMedGPT is an end-to-end AI system for **generating, optimizing, and evaluating drug-like molecules** using **generative models, graph neural networks (GNNs)**, and **reinforcement learning**. Inspired by DeepMind’s AlphaFold and modern biomedical AI pipelines, this project aims to automate the **design of molecules** targeting specific biological properties or proteins.
+BioMedGPT is an end-to-end AI system designed to generate, optimize, and evaluate novel drug-like molecules using a combination of generative deep learning models, graph neural networks (GNNs), and reinforcement learning.
 
+The system aims to automate de novo drug design, where the objective is to create entirely new molecular structures with desired biochemical properties — such as high solubility, low toxicity, and strong binding affinity to disease-relevant proteins (e.g., cancer targets).
+
+Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond simple property prediction — it actively designs new candidate molecules that could function as future drugs, tailored to specific protein targets.
 ---
 
 ##  TODO: Roadmap Checklist
