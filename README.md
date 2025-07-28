@@ -8,6 +8,7 @@ BioMedGPT is an end-to-end AI system designed to generate, optimize, and evaluat
 The system aims to automate de novo drug design, where the objective is to create entirely new molecular structures with desired biochemical properties — such as high solubility, low toxicity, and strong binding affinity to disease-relevant proteins (e.g., cancer targets).
 
 Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond simple property prediction — it actively designs new candidate molecules that could function as future drugs, tailored to specific protein targets.
+
 ---
 
 ##  TODO: Roadmap Checklist
