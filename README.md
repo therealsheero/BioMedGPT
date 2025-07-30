@@ -141,3 +141,133 @@ pip install gradio streamlit umap-learn
 
 ---
 
+# 🧪 BioMedGPT: End-to-End Workflow
+
+---
+
+## 🧠 **Overview**
+
+BioMedGPT is a modular AI pipeline for **de novo drug design**.
+It involves **generating molecules**, **predicting their properties**, and **optimizing them** for drug-likeness and target specificity.
+
+---
+
+## ✅ **Step 1: Molecule Generation**
+
+| Component  | Description                                                                              |
+| ---------- | ---------------------------------------------------------------------------------------- |
+| **Input**  | - Random latent vector (noise) or SMILES seed <br> - (Optional) Target protein embedding |
+| **Model**  | - VAE / Diffusion Model / RNN <br> - Trained on SMILES from ZINC/ChEMBL                  |
+| **Output** | - Novel molecule SMILES string(s) like `CC1=CC=CC=C1`                                    |
+| **Goal**   | Generate **unique, valid, diverse** molecules that haven't been seen before              |
+
+---
+
+## ✅ **Step 2: Molecular Graph Conversion**
+
+| Component  | Description                                       |
+| ---------- | ------------------------------------------------- |
+| **Input**  | SMILES string                                     |
+| **Tool**   | `RDKit` or `DeepChem`                             |
+| **Output** | Molecular graph (nodes = atoms, edges = bonds)    |
+| **Goal**   | Convert string to graph format for GNN processing |
+
+---
+
+## ✅ **Step 3: Property Prediction (via GNN)**
+
+| Component     | Description                                                                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Input**     | Molecular graph                                                                                                                                   |
+| **Model**     | GNN (GCN, MPNN, GAT) trained on labeled datasets (e.g., ESOL, Tox21, BindingDB)                                                                   |
+| **Predicted** | - **QED** (drug-likeness score)<br> - **LogP** (solubility)<br> - **Toxicity** (binary/multi)<br> - **(Optional)** Binding Affinity (e.g., pIC50) |
+| **Output**    | A property score vector per molecule                                                                                                              |
+| **Goal**      | Evaluate if the molecule is "promising" chemically and biologically                                                                               |
+
+---
+
+## ✅ **Step 4: Reward Calculation**
+
+| Component  | Description                                                             |
+| ---------- | ----------------------------------------------------------------------- |
+| **Input**  | Property scores from GNN predictor                                      |
+| **Logic**  | Weighted reward = `QED + 1/LogP - Toxicity + Binding Affinity`          |
+| **Tool**   | Custom reward function (Python logic or JSON-defined if using REINVENT) |
+| **Output** | Single reward score per molecule                                        |
+| **Goal**   | Quantify how "good" a molecule is for optimization                      |
+
+---
+
+## ✅ **Step 5: Molecule Optimization (Reinforcement Learning)**
+
+| Component   | Description                                                                 |
+| ----------- | --------------------------------------------------------------------------- |
+| **Input**   | - Initial SMILES <br> - Reward signal                                       |
+| **Model**   | - RL agent (REINFORCE / PPO) <br> - Frameworks: REINVENT, Stable-Baselines3 |
+| **Actions** | - Edit/add/remove atoms/bonds <br> - Sample new SMILES strings              |
+| **Output**  | - Improved molecule(s) with higher reward                                   |
+| **Goal**    | Optimize molecules towards drug-like, non-toxic, target-specific properties |
+
+---
+
+## ✅ **Step 6: (Optional) Protein-Conditioned Generation**
+
+| Component       | Description                                                        |
+| --------------- | ------------------------------------------------------------------ |
+| **Input**       | Protein target sequence (FASTA) or structure (PDB)                 |
+| **Tool**        | - ESM-2 or AlphaFold to generate embeddings                        |
+| **Integration** | Add protein embedding to molecule generator as conditioning vector |
+| **Goal**        | Generate molecules tailored to bind to a specific protein target   |
+
+---
+
+## ✅ **Step 7: Candidate Selection & Evaluation**
+
+| Component   | Description                                                                     |
+| ----------- | ------------------------------------------------------------------------------- |
+| **Input**   | Top N molecules from generation + optimization pipeline                         |
+| **Process** | - Filter on: validity, uniqueness, QED threshold, toxicity flags, novelty check |
+| **Tool**    | MOSES metrics / TorchDrug / RDKit scoring                                       |
+| **Output**  | Final shortlist of promising candidate molecules                                |
+| **Goal**    | Select molecules worth synthesizing, docking, or experimentally testing         |
+
+---
+
+## ✅ **Step 8: (Optional) Visualization + Web Interface**
+
+| Component    | Description                                                              |
+| ------------ | ------------------------------------------------------------------------ |
+| **Input**    | Final molecule list and property scores                                  |
+| **Tool**     | Streamlit / Gradio dashboard                                             |
+| **Features** | - SMILES viewer <br> - Score plots <br> - Molecule editing/saving/export |
+| **Goal**     | Let user interactively explore and download generated drug candidates    |
+
+---
+
+## 🔁 Iterative Loop
+
+After each round:
+
+* You **retrain** or **fine-tune** the generator or predictor
+* You improve reward functions (multi-objective weighting)
+* You generate and test **better** molecules each cycle
+
+---
+
+## 🧠 Summary
+
+| Stage                  | Model/Tool         | Input                  | Output                    |
+| ---------------------- | ------------------ | ---------------------- | ------------------------- |
+| 1. Generate Molecules  | VAE / Diffusion    | Random latent / target | New SMILES                |
+| 2. Graph Conversion    | RDKit              | SMILES                 | Molecular graph           |
+| 3. Property Prediction | GNN (GCN/MPNN)     | Graph                  | Solubility, QED, toxicity |
+| 4. Reward Function     | Custom logic       | Property scores        | Single scalar reward      |
+| 5. RL Optimization     | PPO / REINVENT     | SMILES + reward        | Better molecules          |
+| 6. Target Conditioning | AlphaFold / ESM    | Protein sequence       | Protein-aware molecules   |
+| 7. Evaluation          | MOSES / TorchDrug  | Molecules              | Final shortlist           |
+| 8. (Optional UI)       | Streamlit / Gradio | Molecules + scores     | Visualization + export    |
+
+---
+
+
+
