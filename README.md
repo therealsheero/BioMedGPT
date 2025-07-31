@@ -130,7 +130,7 @@ pip install gradio streamlit umap-learn
 * **LogP / Solubility**
 * **Toxicity Score**
 * **Validity / Novelty / Uniqueness**
-* **(Optional)** Docking Score (via AutoDock or DiffDock)
+* **(Optional)** Docking Score (via AutoDock or DiffDock
 
 ---
 
@@ -186,7 +186,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-## ✅ **Step 4: Reward Calculation**
+##  **Step 4: Reward Calculation**
 
 | Component  | Description                                                             |
 | ---------- | ----------------------------------------------------------------------- |
@@ -198,7 +198,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-## ✅ **Step 5: Molecule Optimization (Reinforcement Learning)**
+## **Step 5: Molecule Optimization (Reinforcement Learning)**
 
 | Component   | Description                                                                 |
 | ----------- | --------------------------------------------------------------------------- |
@@ -210,7 +210,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-## ✅ **Step 6: (Optional) Protein-Conditioned Generation**
+##  **Step 6: (Optional) Protein-Conditioned Generation**
 
 | Component       | Description                                                        |
 | --------------- | ------------------------------------------------------------------ |
@@ -221,7 +221,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-## ✅ **Step 7: Candidate Selection & Evaluation**
+##  **Step 7: Candidate Selection & Evaluation**
 
 | Component   | Description                                                                     |
 | ----------- | ------------------------------------------------------------------------------- |
@@ -233,7 +233,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-## ✅ **Step 8: (Optional) Visualization + Web Interface**
+##  **Step 8: (Optional) Visualization + Web Interface**
 
 | Component    | Description                                                              |
 | ------------ | ------------------------------------------------------------------------ |
@@ -244,7 +244,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-## 🔁 Iterative Loop
+##  Iterative Loop
 
 After each round:
 
@@ -254,7 +254,7 @@ After each round:
 
 ---
 
-## 🧠 Summary
+## Summary
 
 | Stage                  | Model/Tool         | Input                  | Output                    |
 | ---------------------- | ------------------ | ---------------------- | ------------------------- |
