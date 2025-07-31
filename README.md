@@ -13,23 +13,23 @@ Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond sim
 
 ##  TODO: Roadmap Checklist
 
-- [ ] ✅ **Phase 1: Literature Review + Paper Replication**
+- [ ] 1. **Phase 1: Literature Review + Paper Replication**
   - [ ] Molecule Generation (VAE, RNN, Diffusion)
   - [ ] Property Prediction (GNN on ESOL, Tox21)
   - [ ] RL for Molecule Optimization (PPO/REINFORCE)
 
-- [ ] ✅ **Phase 2: Modular Codebase**
+- [ ] 2. **Phase 2: Modular Codebase**
   - [ ] `generator/`: Molecule generator module
   - [ ] `predictor/`: GNN-based property predictor
   - [ ] `optimizer/`: RL agent & reward engine
   - [ ] `evaluator/`: QED, SA, novelty scoring
 
-- [ ] ✅ **Phase 3: Integrations & Evaluation**
+- [ ] 3. **Phase 3: Integrations & Evaluation**
   - [ ] Add protein embeddings (ESM/AlphaFold)
   - [ ] Create molecule evaluation dashboard
   - [ ] Benchmark against MOSES & REINVENT
 
-- [ ] ✅ **Phase 4: Deployment & Presentation**
+- [ ] 4. **Phase 4: Deployment & Presentation**
   - [ ] Create Streamlit/Gradio frontend
   - [ ] Export best candidates to CSV
   - [ ] Create video demo and write Medium post
@@ -141,18 +141,18 @@ pip install gradio streamlit umap-learn
 
 ---
 
-# 🧪 BioMedGPT: End-to-End Workflow
+#  BioMedGPT: End-to-End Workflow
 
 ---
 
-## 🧠 **Overview**
+##  **Overview**
 
 BioMedGPT is a modular AI pipeline for **de novo drug design**.
 It involves **generating molecules**, **predicting their properties**, and **optimizing them** for drug-likeness and target specificity.
 
 ---
 
-## ✅ **Step 1: Molecule Generation**
+##  **Step 1: Molecule Generation**
 
 | Component  | Description                                                                              |
 | ---------- | ---------------------------------------------------------------------------------------- |
@@ -163,7 +163,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-## ✅ **Step 2: Molecular Graph Conversion**
+##  **Step 2: Molecular Graph Conversion**
 
 | Component  | Description                                       |
 | ---------- | ------------------------------------------------- |
@@ -174,7 +174,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-## ✅ **Step 3: Property Prediction (via GNN)**
+##  **Step 3: Property Prediction (via GNN)**
 
 | Component     | Description                                                                                                                                       |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
