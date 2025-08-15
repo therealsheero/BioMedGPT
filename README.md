@@ -11,31 +11,6 @@ Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond sim
 
 ---
 
-##  TODO: Roadmap Checklist
-
-- [ ] 1. **Phase 1: Literature Review + Paper Replication**
-  - [ ] Molecule Generation (VAE, RNN, Diffusion)
-  - [ ] Property Prediction (GNN on ESOL, Tox21)
-  - [ ] RL for Molecule Optimization (PPO/REINFORCE)
-
-- [ ] 2. **Phase 2: Modular Codebase**
-  - [ ] `generator/`: Molecule generator module
-  - [ ] `predictor/`: GNN-based property predictor
-  - [ ] `optimizer/`: RL agent & reward engine
-  - [ ] `evaluator/`: QED, SA, novelty scoring
-
-- [ ] 3. **Phase 3: Integrations & Evaluation**
-  - [ ] Add protein embeddings (ESM/AlphaFold)
-  - [ ] Create molecule evaluation dashboard
-  - [ ] Benchmark against MOSES & REINVENT
-
-- [ ] 4. **Phase 4: Deployment & Presentation**
-  - [ ] Create Streamlit/Gradio frontend
-  - [ ] Export best candidates to CSV
-  - [ ] Create video demo and write Medium post
-
----
-
 ##  Folder Structure
 
 ```bash
