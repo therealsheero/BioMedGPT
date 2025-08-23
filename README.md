@@ -234,7 +234,7 @@ After each round:
 | Stage                  | Model/Tool         | Input                  | Output                    |
 | ---------------------- | ------------------ | ---------------------- | ------------------------- |
 | 1. Generate Molecules  | VAE / Diffusion    | Random latent / target | New SMILES                |
-| 2. Graph Conversion    | RDKit              | SMILES                 | Molecular graph           |
+| (Optional) 2. Graph Conversion    | RDKit              | SMILES                 | Molecular graph           |
 | 3. Property Prediction | GNN (GCN/MPNN)     | Graph                  | Solubility, QED, toxicity |
 | 4. Reward Function     | Custom logic       | Property scores        | Single scalar reward      |
 | 5. RL Optimization     | PPO / REINVENT     | SMILES + reward        | Better molecules          |
