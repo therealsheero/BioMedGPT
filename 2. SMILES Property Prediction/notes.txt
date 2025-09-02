@@ -1,0 +1,22 @@
+| Property              | Type                   | Add to RDKit-based tool?  | How?                         |
+| --------------------- | ---------------------- | ------------------------- | ---------------------------- |
+| **Canonical SMILES**  | Rule-based             | ✅ Yes                     | RDKit                        |
+| **Mol. Formula**      | Rule-based             | ✅ Yes                     | RDKit                        |
+| **Mol. Weight**       | Rule-based             | ✅ Yes                     | RDKit                        |
+| **LogP**              | Rule-based (approx.)   | ✅ Yes                     | RDKit Descriptors.MolLogP    |
+| **H-bond Donors**     | Rule-based             | ✅ Yes                     | RDKit                        |
+| **H-bond Acceptors**  | Rule-based             | ✅ Yes                     | RDKit                        |
+| **TPSA**              | Rule-based             | ✅ Yes                     | RDKit                        |
+| **Rotatable Bonds**   | Rule-based             | ✅ Yes                     | RDKit                        |
+| **Formal Charge**     | Rule-based             | ✅ Yes                     | RDKit                        |
+| **QED Score**         | RDKit-based ML-derived | ✅ Yes                     | RDKit QED module             |
+| **Solubility (LogS)** | Requires ML model      | ⚠️ Optional (model-based) | Needs pretrained regressor   |
+| **Toxicity**          | Requires ML model      | ⚠️ Optional (model-based) | Needs classifier or DeepChem |
+
+
+audiowide
+orbitron
+quantico
+titan one
+share tech mono
+vt323
