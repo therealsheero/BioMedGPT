@@ -36,7 +36,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Input**     | Molecular graph                                                                                                                                   |
 | **Model**     | GNN (GCN, MPNN, GAT) trained on labeled datasets (e.g., ESOL, Tox21, BindingDB)                                                                   |
-| **Predicted** | - **QED** (drug-likeness score)<br> - **LogP** (solubility)<br> - **Toxicity** (binary/multi)<br> - **(Optional)** Binding Affinity (e.g., pIC50) |
+| **Predicted** | - **QED** (drug-likeness score)<br> - **LogP** (solubility) - **Toxicity** (binary/multi) |
 | **Output**    | A property score vector per molecule                                                                                                              |
 | **Goal**      | Evaluate if the molecule is "promising" chemically and biologically                                                                               |
 
