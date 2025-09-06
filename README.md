@@ -36,7 +36,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Input**     | Molecular graph                                                                                                                                   |
 | **Model**     | GNN (GCN, MPNN, GAT) trained on labeled datasets (e.g., ESOL, Tox21, BindingDB)                                                                   |
-| **Predicted** | - **QED** (drug-likeness score)<br> - **LogP** (solubility) - **Toxicity** (binary/multi) |
+| **Predicted** | - **QED** (drug-likeness score) - **LogP** (solubility) - **Toxicity** (binary/multi) |
 | **Output**    | A property score vector per molecule                                                                                                              |
 | **Goal**      | Evaluate if the molecule is "promising" chemically and biologically                                                                               |
 
@@ -58,9 +58,9 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 | Component   | Description                                                                 |
 | ----------- | --------------------------------------------------------------------------- |
-| **Input**   | - Initial SMILES <br> - Reward signal                                       |
-| **Model**   | - RL agent (REINFORCE / PPO) <br> - Frameworks: REINVENT, Stable-Baselines3 |
-| **Actions** | - Edit/add/remove atoms/bonds <br> - Sample new SMILES strings              |
+| **Input**   | - Initial SMILES - Reward signal                                       |
+| **Model**   | - RL agent (REINFORCE / PPO) - Frameworks: REINVENT, Stable-Baselines3 |
+| **Actions** | - Edit/add/remove atoms/bonds - Sample new SMILES strings              |
 | **Output**  | - Improved molecule(s) with higher reward                                   |
 | **Goal**    | Optimize molecules towards drug-like, non-toxic, target-specific properties |
 
