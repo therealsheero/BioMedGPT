@@ -3,8 +3,11 @@
 
 ##  **Overview**
 
-BioMedGPT is a modular AI pipeline for **de novo drug design**.
-It involves **generating molecules**, **predicting their properties**, and **optimizing them** for drug-likeness and target specificity.
+BioMedGPT is an end-to-end AI system designed to generate, optimize, and evaluate novel drug-like molecules using a combination of generative deep learning models, graph neural networks (GNNs), and reinforcement learning.
+
+The system aims to automate de novo drug design, where the objective is to create entirely new molecular structures with desired biochemical properties — such as high solubility, low toxicity, and strong binding affinity to disease-relevant proteins (e.g., cancer targets).
+
+Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond simple property prediction — it actively designs new candidate molecules that could function as future drugs, tailored to specific protein targets.
 
 ---
 
@@ -125,46 +128,10 @@ After each round:
 
 ---
 
-
----
-
-#  BioMedGPT: AI-Driven Drug Discovery Platform
-
-BioMedGPT is an end-to-end AI system designed to generate, optimize, and evaluate novel drug-like molecules using a combination of generative deep learning models, graph neural networks (GNNs), and reinforcement learning.
-
-The system aims to automate de novo drug design, where the objective is to create entirely new molecular structures with desired biochemical properties — such as high solubility, low toxicity, and strong binding affinity to disease-relevant proteins (e.g., cancer targets).
-
-Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond simple property prediction — it actively designs new candidate molecules that could function as future drugs, tailored to specific protein targets.
-
----
-
-##  Folder Structure
-
-```bash
-BioMedGPT/
-├── generator/          # VAE / Diffusion model for molecule generation
-├── predictor/          # GNN model for property prediction
-├── optimizer/          # PPO or REINFORCE-based fine-tuner
-├── evaluator/          # Reward function, scoring scripts
-├── data/               # Datasets (ZINC, ESOL, etc.)
-├── notebooks/          # Paper replications & experiments
-├── scripts/            # Training / Evaluation entrypoints
-├── app/                # Streamlit or Gradio frontend
-└── README.md           # You are here
-````
-
----
-
 ##  Installation Instructions
 
 > ⚠️ Use Python 3.8 or 3.9. Avoid 3.12 due to TorchDrug, MOSES, RDKit issues.
 
-###  Create Environment
-
-```bash
-conda create -n biomedgpt python=3.9
-conda activate biomedgpt
-```
 
 ###  Install Dependencies
 
