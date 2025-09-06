@@ -174,7 +174,7 @@ pip install gradio streamlit umap-learn
 2. **Train GNN** to predict QED, solubility, and toxicity
 3. **Define reward function** combining properties
 4. **Train RL agent** to optimize generated molecules
-5. (Optional) **Add protein-conditioning**
+5. **Add protein-conditioning** - not doing now
 6. **Evaluate** on novelty, diversity, drug-likeness
 7. (Optional) Build web app or CLI for molecule exploration
 
