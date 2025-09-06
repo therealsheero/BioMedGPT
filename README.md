@@ -36,7 +36,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Input**     | Molecular graph                                                                                                                                   |
 | **Model**     | GNN (GCN, MPNN, GAT) trained on labeled datasets (e.g., ESOL, Tox21, BindingDB)                                                                   |
-| **Predicted** | - **QED** (drug-likeness score) - **LogP** (solubility) - **Toxicity** (binary/multi) |
+| **Predicted** | **QED** (drug-likeness score) - **LogP** (solubility) - **Toxicity** (binary/multi) |
 | **Output**    | A property score vector per molecule                                                                                                              |
 | **Goal**      | Evaluate if the molecule is "promising" chemically and biologically                                                                               |
 
@@ -89,13 +89,13 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-##  **Step 8: (Optional) Visualization + Web Interface**
+##  **Step 8: Visualization + Web Interface**
 
 | Component    | Description                                                              |
 | ------------ | ------------------------------------------------------------------------ |
 | **Input**    | Final molecule list and property scores                                  |
 | **Tool**     | Streamlit / Gradio dashboard                                             |
-| **Features** | - SMILES viewer <br> - Score plots <br> - Molecule editing/saving/export |
+| **Features** | - SMILES viewer - Score plots - Molecule editing/saving/export |
 | **Goal**     | Let user interactively explore and download generated drug candidates    |
 
 ---
