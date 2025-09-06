@@ -176,7 +176,7 @@ pip install gradio streamlit umap-learn
 4. **Train RL agent** to optimize generated molecules
 5. **Add protein-conditioning** - not doing now
 6. **Evaluate** on novelty, diversity, drug-likeness
-7. (Optional) Build web app or CLI for molecule exploration
+7. Build web app or CLI for molecule exploration
 
 ---
 
