@@ -1,4 +1,4 @@
-# Work is in Progress 
+# Work in Progress 
 #  BioMedGPT: End-to-End Workflow
 
 ##  **Overview**
