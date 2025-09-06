@@ -66,7 +66,7 @@ It involves **generating molecules**, **predicting their properties**, and **opt
 
 ---
 
-##  **Step 6: (Optional) Protein-Conditioned Generation**
+##  **Step 6: Protein-Conditioned Generation**
 
 | Component       | Description                                                        |
 | --------------- | ------------------------------------------------------------------ |
