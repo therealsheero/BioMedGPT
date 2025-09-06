@@ -190,23 +190,4 @@ pip install gradio streamlit umap-learn
 | RL                | `Stable-Baselines3`, `REINVENT`             |
 | Protein features  | `ESM`, `BioPython`, `AlphaFold2`            |
 
----
-
-##  Evaluation Metrics
-
-* **QED**: Drug-likeness
-* **SA Score**: Synthetic accessibility
-* **LogP / Solubility**
-* **Toxicity Score**
-* **Validity / Novelty / Uniqueness**
-* **(Optional)** Docking Score (via AutoDock or DiffDock
-
----
-
-##  Credits & References
-
-* Olivecrona et al., *"Molecular De Novo Design through Deep Reinforcement Learning"*, 2017
-* Gilmer et al., *"Neural Message Passing for Quantum Chemistry"*, 2017
-
----
 
