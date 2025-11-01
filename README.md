@@ -33,12 +33,12 @@ Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond sim
 
 ---
 
-##  **Step 3: Property Prediction (via GNN)**
+##  **Step 3: Property Prediction (via libraries)**
 
 | Component     | Description                                                                                                                                       |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Input**     | Molecular graph                                                                                                                                   |
-| **Model**     | GNN (GCN, MPNN, GAT) trained on labeled datasets (e.g., ESOL, Tox21, BindingDB)                                                                   |
+| **Input**     | Molecular SMILE string                                                                                                                                |
+| **Model**     | GNN (GCN, MPNN, GAT) trained on labeled datasets e.g., ESOL, Tox21, BindingDB                                                                 |
 | **Predicted** | **QED** (drug-likeness score) - **LogP** (solubility) - **Toxicity** (binary/multi) |
 | **Output**    | A property score vector per molecule                                                                                                              |
 | **Goal**      | Evaluate if the molecule is "promising" chemically and biologically                                                                               |
