@@ -38,7 +38,7 @@ Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond sim
 | Component     | Description                                                                                                                                       |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Input**     | Molecular SMILE string                                                                                                                                |
-| **Model**     | GNN (GCN, MPNN, GAT) trained on labeled datasets e.g., ESOL, Tox21, BindingDB                                                                 |
+| **Model**     | Regressor trained on labeled datasets e.g., ESOL, Tox21, BindingDB                                                                 |
 | **Predicted** | **QED** (drug-likeness score) - **LogP** (solubility) - **Toxicity** (binary/multi) and more|
 | **Output**    | A property score vector per molecule                                                                                                              |
 | **Goal**      | Evaluate if the molecule is "promising" chemically and biologically                                                                               |
