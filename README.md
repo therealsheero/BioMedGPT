@@ -184,7 +184,7 @@ pip install gradio streamlit umap-learn
 
 | Category          | Tools/Libraries                             |
 | ----------------- | ------------------------------------------- |
-| Molecular graphs  | `rdkit`, `selfies`, `torchdrug`, `deepchem` |
+| Molecular graphs  | `rdkit`, `torchdrug`, `deepchem` |
 | Generative Models | `PyTorch`, `transformers`, `MOSES`          |
 | GNNs              | `PyTorch Geometric`, `DGL`                  |
 | RL                | `Stable-Baselines3`, `REINVENT`             |
