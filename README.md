@@ -22,7 +22,7 @@ Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond sim
 
 ---
 
-##  **Step 2: Molecular Graph Conversion**
+##  **Step 2: Molecular Graph Conversion (Optional)**
 
 | Component  | Description                                       |
 | ---------- | ------------------------------------------------- |
