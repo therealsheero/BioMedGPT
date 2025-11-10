@@ -1,4 +1,4 @@
-# Work in Progress : Open to suggestions, feel free to fork and give me better ideas!
+# Work in Progress : Open to suggestions, feel free to give me better ideas!
 #  BioMedGPT: End-to-End Workflow
 
 ##  **Overview**
