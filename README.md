@@ -68,7 +68,7 @@ Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond sim
 | **Goal**    | Optimize molecules towards drug-like, non-toxic, target-specific properties |
 
 ---
-
+Right now protien focused generation or evaluation is optional
 ##  **Step 6: Protein-Conditioned Generation**
 
 | Component       | Description                                                        |
