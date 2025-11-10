@@ -17,7 +17,7 @@ Inspired by breakthroughs like AlphaFold and DiffDock, BioMedGPT goes beyond sim
 | ---------- | ---------------------------------------------------------------------------------------- |
 | **Input**  | - Random latent vector (noise) or SMILES seed |
 | **Model**  | - LSTM - Trained on SMILES from ZINC/ChEMBL                  |
-| **Output** | - Novel molecule SMILES string(s) like `CC1=CC=CC=C1`                                    |
+| **Output** | - Novel molecule SMILES string(s) like for example - `CC1=CC=CC=C1`                                    |
 | **Goal**   | Generate **unique, valid, diverse** molecules that haven't been seen before              |
 
 ---
