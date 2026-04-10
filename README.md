@@ -1,6 +1,5 @@
 # Work in Progress : Open to suggestions, feel free to give me better ideas!
-#  BioMedGPT: End-to-End Workflow
-
+##  BioMedGPT: End-to-End Workflow
 ##  **Overview**
 
 BioMedGPT is an end-to-end AI system designed to generate, optimize, and evaluate novel drug-like molecules using a combination of generative deep learning models, graph neural networks (GNNs), and reinforcement learning.
